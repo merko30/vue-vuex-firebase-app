@@ -2,7 +2,6 @@ import VueRouter from "vue-router";
 
 import Login from "../components/auth/Login";
 import Register from "../components/auth/Register";
-import Profile from "../components/auth/Profile";
 
 import New from "../components/posts/Add-Edit/New";
 import PostDetail from "../components/posts/PostDetail";
