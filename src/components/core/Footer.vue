@@ -1,6 +1,6 @@
 <template>
     <div id="footer">
-        <h3>Footer</h3>
+    <h5 style="margin: 0;">VueFire &copy;</h5>
     </div>
 </template>
 
@@ -11,6 +11,13 @@ export default {
 </script>
 
 <style scoped>
+#footer {
+    padding: 1em;
+    margin-top: 4em;
+    color: white;
+    background-color: #343a40;
+    text-align: center;
+}
 </style>
 
 

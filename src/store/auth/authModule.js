@@ -27,7 +27,7 @@ export default {
                     });
                     user.user.updateProfile({
                         displayName: displayName
-                    })
+                    });
                 })
 
                 .then(() => {

@@ -2,15 +2,16 @@
     <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-6 mb-2" v-for="post in posts" :key="post.id">
                 <router-link
-                    :to="'/' + post.id"
+                    :to="'posts/' + post.id"
                     class="card" 
                     :style="{background: 'url('+post.image+') center no-repeat!important'}">
                         <div class="card-body">
                             <h5 class="card-title">{{post.title}}</h5>
-                            <p class="small">{{post.created_at}} by {{post.authorName}}</p>
+                            <p class="small">{{ formatDate(post.created_at)}} by {{post.authorName}}</p>
                         </div>
                 </router-link>
         </div>
+        
     </div>
 </template>
 
@@ -22,6 +23,13 @@ export default {
     name: "PostGrid",
     computed: {
         ...mapGetters("post", { posts: "posts", filtered: "filtered" })
+    },
+    methods: {
+        formatDate(date) {
+            let splited = date.split(" ");
+            let d = splited.slice(1).join(" ");
+            return d;
+        }
     }
 };
 </script>

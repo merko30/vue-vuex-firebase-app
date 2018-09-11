@@ -10,6 +10,7 @@
             <router-link to="/login"  v-if="!isLoggedIn" class="nav-item nav-link ">Login</router-link>
             <router-link to="/register" v-if="!isLoggedIn" class="nav-item nav-link ">Register</router-link>
             <router-link to="/new" v-if="isLoggedIn" class="nav-item nav-link ">Add new post</router-link>
+            <router-link to="/profile" v-if="isLoggedIn" class="nav-item nav-link">Profile</router-link>
             <a @click="logout" style="cursor: pointer;" v-if="isLoggedIn" class="nav-item nav-link ">Logout</a>
             </div>
         </div>

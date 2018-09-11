@@ -30,17 +30,15 @@ export default {
 
 <style scoped>
 .loading {
-    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    height: 100vh;
-    width: 100vw;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 200;
     background: rgba(0, 0, 0, 0.3);
 }
 

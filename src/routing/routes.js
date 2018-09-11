@@ -2,8 +2,9 @@ import VueRouter from "vue-router";
 
 import Login from "../components/auth/Login";
 import Register from "../components/auth/Register";
-import New from "../components/posts/Add-Edit/New";
+import Profile from "../components/auth/Profile";
 
+import New from "../components/posts/Add-Edit/New";
 import PostDetail from "../components/posts/PostDetail";
 
 import Home from "../components/core/Home";
@@ -22,9 +23,9 @@ let router = new VueRouter({
                 requiresAuth: true
             }
         },
-        { path: "/:id", component: PostDetail },
+        { path: "/posts/:id", component: PostDetail },
         {
-            path: "/:id/edit",
+            path: "/posts/:id/edit",
             name: "edit",
             component: New,
             meta: {
