@@ -1,8 +1,9 @@
 # vuex
 
 ## Project setup
-```
+
 Set firebase config in src/firebase.js file
+```
 npm install
 ```
 
